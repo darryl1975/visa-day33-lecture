@@ -1,0 +1,7 @@
+<p>test works!</p>
+<br><br>
+<p>{{ greeting }}</p>
+<br><br>
+<label>Write something and pass data/string back to parent</label>
+<input #itemName>
+<button (click)="sendItem(itemName.value)">Send Data Back to Parent</button>
