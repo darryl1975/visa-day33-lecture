@@ -13,12 +13,21 @@ export class TestComponent implements OnInit {
   @Output()
   public eventEmitter: EventEmitter<any> = new EventEmitter();
 
+  cards: any[] = [{
+    title: "First Record",
+    body: "This is my first record"
+  },
+  {
+    title: "Second Record",
+    body: "This is my second record"
+  }];
+
   constructor() {
 
   }
 
   ngOnInit(): void {
-    
+
   }
 
   sendItem(itemName: any): void {
